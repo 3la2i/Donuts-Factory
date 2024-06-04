@@ -1,6 +1,10 @@
 let name = prompt("Please enter your name");
 let gender = prompt("please enter your gender male/female");
 
+while (gender.toLowerCase() !== 'male' && gender.toLowerCase() !== 'female') {
+    gender = prompt("Invalid input. Please enter your gender (male/female):");
+}
+
 alert("Welcome, " + name + "!")
 
 
