@@ -1,11 +1,27 @@
 let name = prompt("Please enter your name");
 let gender = prompt("please enter your gender male/female");
 
-while (gender.toLowerCase() !== 'male' && gender.toLowerCase() !== 'female') {
-    gender = prompt("Invalid input. Please enter your gender (male/female):");
-}
+// while (gender !== "male" || "female" ){
+//     gender = prompt("please enter your gender male/female");}
+//     if(male )
 
-alert("Welcome, " + name + "!")
+
+
+
+
+    while (gender.toLowerCase() !== 'male' && gender.toLowerCase() !== 'female') {
+        gender = prompt("Invalid input. Please enter your gender (male/female):");
+    }
+
+    if (gender.toLowerCase() === 'male') {
+        alert("Welcome Mr. " + name + "!");
+    } else if (gender.toLowerCase() === 'female') {
+        alert("Welcome Ms. " + name + "!");
+    }
+    
+
+
+
 
 
 let order = prompt("What would you like to order? Donut, Coffee, Ice Cream, or Bakery?")
@@ -30,3 +46,8 @@ switch (order) {
 
 let = alert("your order is bieng brebaired")
 
+
+// the name and the order
+
+console.log("User Name: " + name);
+console.log("Order: " + order);
