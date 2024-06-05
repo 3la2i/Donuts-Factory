@@ -1,5 +1,11 @@
 let name = prompt("Please enter your name");
-let gender = prompt("please enter your gender male/female");
+function askGender() {
+    let gender = prompt("Please enter your gender (male/female)");
+
+    while (gender.toLowerCase() !== 'male' && gender.toLowerCase() !== 'female') {
+        gender = prompt("Invalid input. Please enter your gender (male/female):");
+    }
+}
 
 // while (gender !== "male" || "female" ){
 //     gender = prompt("please enter your gender male/female");}
@@ -8,10 +14,11 @@ let gender = prompt("please enter your gender male/female");
 
 
 
+    let gender = askGender();
 
-    while (gender.toLowerCase() !== 'male' && gender.toLowerCase() !== 'female') {
-        gender = prompt("Invalid input. Please enter your gender (male/female):");
-    }
+
+
+    
 
     if (gender.toLowerCase() === 'male') {
         alert("Welcome Mr. " + name + "!");
